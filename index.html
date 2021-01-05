@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <title>CSS Stylesheets with Relative Paths</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- This line is money! It points your HTML to the CSS file. -->
   <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
   <link rel="stylesheet" href="static/css/style.css">
@@ -18,17 +18,24 @@
     <h1>Candidate Bio</h1>
   </header>
 
-  <main class="container">
-    <section id="main-bio">
-      <section id="figure">
-        <h2 id="bio-name">Jason O'Day</h2>
-        <img id="bio-image" src="static/images/starwars1_new.png" alt="Jason O'Day">
-      </section>
-      <p>Hello. My name is Jason O'Day. I am a Data Scientist who enjoys working on predictive analytics and finding efficiencies in coding.
-        I enjoy cleaning and manipulating data but I really enjoy visualizing it and telling a story with the data.
-      </p>
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+        <section id="main-bio">
+          <section id="figure">
+            <h2 id="bio-name">Jason O'Day</h2>
+            <img id="bio-image" src="static/images/starwars1_new.png" alt="Jason O'Day">
+          </section>
+          <p>Hello. My name is Jason O'Day. I am a Data Scientist who enjoys working on predictive analytics and finding efficiencies in coding.
+            I enjoy cleaning and manipulating data but I really enjoy visualizing it and telling a story with the data.
+          </p>
     </section>
+    </div>
+  </div>
 
+  </div>
+  <div class="col-sm-4">
     <aside id="contact-info">
       <h2>Contact Info</h2>
       <ul>
@@ -37,7 +44,8 @@
         <li><strong>Portfolio:</strong> <a href="#">https://www.linkedin.com/in/jasonodaymba/</a></li>
       </ul>
     </aside>
-  </main>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
